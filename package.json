@@ -40,5 +40,9 @@
   "jest": {
     "verbose": true
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "= 7.6",
+    "npm": ">= 3.10"
+  }
 }
