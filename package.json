@@ -22,7 +22,9 @@
   },
   "dependencies": {
     "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.3.2",
+    "react-infinite-calendar": "^2.1.5",
     "whatwg-fetch": "^1.0.0"
   },
   "scripts": {
