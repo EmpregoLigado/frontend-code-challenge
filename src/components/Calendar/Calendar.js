@@ -1,5 +1,6 @@
 import React from 'react';
 import InfiniteCalendar from 'react-infinite-calendar';
+import { getJson } from '../../modules/helpers';
 import 'react-infinite-calendar/styles.css';
 import './Calendar.css';
 
@@ -9,7 +10,26 @@ class Calendar extends InfiniteCalendar {
     this.state = {};
   }
 
+  getHolidays(data) {
+    const url = `https://holidayapi.com/v1/holidays?key=${data.key}&country=${data.country}&year=${data.year}`;
+    return getJson(url);
+  }
+
   render() {
+    const data = {
+      key: `2eda3eec-837f-4309-a203-2660903f183f`,
+      country: `BR`,
+      year: `2017`
+    };
+
+    this.getHolidays(data).then((res) => {
+        if (res.error) {
+
+        } else {
+            
+        }
+    });
+
     const today = new Date();
     const lastWeek = new Date(
       today.getFullYear(),
