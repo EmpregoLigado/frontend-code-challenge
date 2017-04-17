@@ -7,28 +7,46 @@ import './Calendar.css';
 class Calendar extends InfiniteCalendar {
   constructor(props) {
     super(props);
-    this.state = {};
-  }
 
-  getHolidays(data) {
-    const url = `https://holidayapi.com/v1/holidays?key=${data.key}&country=${data.country}&year=${data.year}`;
-    return getJson(url);
-  }
-
-  render() {
-    const data = {
+    this.config = {
       key: `2eda3eec-837f-4309-a203-2660903f183f`,
       country: `BR`,
       year: `2017`
     };
 
-    this.getHolidays(data).then((res) => {
-        if (res.error) {
+    this.state = {
+      holidays: [],
+      loader: true,
+      error: null
+    };
+  }
 
-        } else {
-            
-        }
-    });
+  getHolidays(data) {
+    return getJson(`https://holidayapi.com/v1/holidays?key=${data.key}&country=${data.country}&year=${data.year}`);
+  }
+
+  renderLoader() {
+    const divStyle = {
+      width: `100%`,
+      height: `100%`,
+      position: `absolute`,
+      background: `#240E44 url(loader.gif) center no-repeat`
+    }
+    return <div style={divStyle}></div>;
+  }
+
+  renderError() {
+    return (
+      <div>
+        {this.state.error.message}
+      </div>
+    );
+  }
+
+  renderCalendar() {
+    if (this.state.error) {
+      return this.renderError();
+    }
 
     const today = new Date();
     const lastWeek = new Date(
@@ -39,15 +57,15 @@ class Calendar extends InfiniteCalendar {
 
     return (
       <InfiniteCalendar
-        width={ this.props.width }
-        height={ this.props.height }
-        rowHeight={ this.props.rowHeight }
+        width={ `100%` }
+        height={ window.innerHeight - 147 }
+        rowHeight={ 138 }
         selected={ today }
         minDate={ lastWeek }
-        disabledDays={ this.props.disabledDays }
         locale={{
           locale: require('date-fns/locale/pt'),
           headerFormat: 'dddd, D MMMM',
+          weekStartsOn: 1,
           weekdays: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],
           blank: 'Nenhuma data selecionada',
           todayLabel: {
@@ -70,6 +88,32 @@ class Calendar extends InfiniteCalendar {
           }
         }}
       />
+    );
+  }
+
+  componentDidMount() {
+    return this.getHolidays(this.config)
+      .then(res => {
+        this.setState({
+          holidays: res.holidays,
+          loader: false,
+        })
+      })
+      .catch(err => {
+        this.setState({
+          loader: false,
+          error: err
+        })
+      });
+  }
+
+  render() {
+    return (
+      <div>
+        {this.state.loader ?
+          this.renderLoader()
+          : this.renderCalendar()}
+      </div>
     );
   }
 }
