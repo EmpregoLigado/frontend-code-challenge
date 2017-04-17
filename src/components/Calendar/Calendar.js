@@ -96,14 +96,14 @@ class Calendar extends InfiniteCalendar {
       .then(res => {
         this.setState({
           holidays: res.holidays,
-          loader: false,
-        })
+          loader: false
+        });
       })
       .catch(err => {
         this.setState({
           loader: false,
           error: err
-        })
+        });
       });
   }
 
