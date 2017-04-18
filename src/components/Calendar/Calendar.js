@@ -54,7 +54,12 @@ class Calendar extends InfiniteCalendar {
       today.getMonth(),
       today.getDate() - 7
     );
+    const holidays = [];
 
+    Object.keys(this.state.holidays).map(date => {
+      return holidays.push(new Date(date.split(`-`).join(`/`)));
+    });
+    
     return (
       <InfiniteCalendar
         width={ `100%` }
@@ -62,29 +67,30 @@ class Calendar extends InfiniteCalendar {
         rowHeight={ 138 }
         selected={ today }
         minDate={ lastWeek }
+        disabledDates={ holidays }
         locale={{
-          locale: require('date-fns/locale/pt'),
-          headerFormat: 'dddd, D MMMM',
+          locale: require(`date-fns/locale/pt`),
+          headerFormat: `dddd, D MMMM`,
           weekStartsOn: 1,
-          weekdays: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'],
-          blank: 'Nenhuma data selecionada',
+          weekdays: [`Dom`,`Seg`,`Ter`,`Qua`,`Qui`,`Sex`,`Sáb`],
+          blank: `Nenhuma data selecionada`,
           todayLabel: {
-            long: 'Hoje',
-            short: 'Hoje'
+            long: `Hoje`,
+            short: `Hoje`
           }
         }}
         theme={{
-          selectionColor: 'rgb(249, 206, 35)',
+          selectionColor: `rgb(249, 206, 35)`,
           textColor: {
-            default: '#333',
-            active: '#fff'
+            default: `#333`,
+            active: `#fff`
           },
-          weekdayColor: 'rgb(146, 118, 255)',
-          headerColor: '#333',
+          weekdayColor: `rgb(146, 118, 255)`,
+          headerColor: `#333`,
           floatingNav: {
-            background: 'rgba(81, 67, 138, 0.96)',
-            color: '#fff',
-            chevron: '#ffa726'
+            background: `rgba(81, 67, 138, 0.96)`,
+            color: `#fff`,
+            chevron: `#ffa726`
           }
         }}
       />
