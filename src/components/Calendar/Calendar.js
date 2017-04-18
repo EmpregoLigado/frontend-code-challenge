@@ -26,13 +26,7 @@ class Calendar extends InfiniteCalendar {
   }
 
   renderLoader() {
-    const divStyle = {
-      width: `100%`,
-      height: `100%`,
-      position: `absolute`,
-      background: `#240E44 url(loader.gif) center no-repeat`
-    }
-    return <div style={divStyle}></div>;
+    return <div></div>;
   }
 
   renderError() {

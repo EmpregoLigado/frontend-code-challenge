@@ -2,7 +2,7 @@
   "name": "challange-front",
   "version": "0.1.0",
   "description": "Simple test project to consume a API, show the holiday dates and more",
-  "homepage": "https://github.com/nelsera/challange-front.git",
+  "homepage": "https://nelsera.github.io/challange-front",
   "repository": {
     "type": "git",
     "url": "git://github.com/nelsera/challange-front.git"
@@ -12,6 +12,7 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "enzyme": "^2.5.1",
+    "gh-pages": "^0.12.0",
     "jest": "^16.0.2",
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
