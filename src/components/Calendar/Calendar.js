@@ -1,18 +1,13 @@
 import React from 'react';
 import InfiniteCalendar from 'react-infinite-calendar';
 import { getJson } from '../../modules/helpers';
-import 'react-infinite-calendar/styles.css';
+import config from './Calendar.config.js';
 import './Calendar.css';
+import 'react-infinite-calendar/styles.css';
 
 class Calendar extends InfiniteCalendar {
   constructor(props) {
     super(props);
-
-    this.config = {
-      key: `2eda3eec-837f-4309-a203-2660903f183f`,
-      country: `BR`,
-      year: `2017`
-    };
 
     this.state = {
       holidays: [],
@@ -92,7 +87,7 @@ class Calendar extends InfiniteCalendar {
   }
 
   componentDidMount() {
-    return this.getHolidays(this.config)
+    return this.getHolidays(config)
       .then(res => {
         this.setState({
           holidays: res.holidays,
