@@ -1,13 +1,10 @@
 import 'whatwg-fetch';
 
 function getJson(url) {
-    return fetch(url).then(function(response) {
-        return response.json();
-    }).then(function(json) {
-        return json;
-    }).catch(function(err) {
-    	// Error
-    });
+  return fetch(url)
+    .then(res => res.json())
+    .then(json => json)
+    .catch(err => err);
 }
 
 export { getJson };
