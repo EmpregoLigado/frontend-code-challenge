@@ -1,6 +1,6 @@
 {
   "name": "challange-front",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple test project to consume a API, show the holiday dates and more",
   "homepage": "https://nelsera.github.io/challange-front",
   "repository": {
