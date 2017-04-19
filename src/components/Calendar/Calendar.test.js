@@ -16,20 +16,24 @@ it('should have instance for getHolidays', () => {
 
 it('renders calendar', () => {
   const wrapper = mount(<Calendar />);
+  wrapper.setState({ loader: false });
   expect(wrapper.find('.Cal__Container__root').length).toEqual(1);
 });
 
 it('renders today', () => {
   const wrapper = mount(<Calendar />);
+  wrapper.setState({ loader: false });
   expect(wrapper.find('.Cal__Header__date').length).toEqual(2);
 });
 
 it('renders weekdays__day', () => {
   const wrapper = mount(<Calendar />);
+  wrapper.setState({ loader: false });
   expect(wrapper.find('.Cal__Weekdays__day').length).toEqual(7);
 });
 
 it('renders day__selection', () => {
   const wrapper = mount(<Calendar />);
+  wrapper.setState({ loader: false });
   expect(wrapper.find('.Cal__Day__selection').length).toEqual(1);
 });
