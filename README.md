@@ -1,55 +1,38 @@
-### Challange Front
+Simple test project to consume a API, show the holiday dates and more.
 
-##### Pré requisitos
----
+## Available Scripts
 
-O seu teste deve ter um **README** com os passos necessários para:
+In the project directory, you can run:
 
-- Rodar o projeto;
-- Instalar as dependências (de preferência utilizando **NPM** ou **Yarn** );
-- Rodar os testes automatizados;(AVA, MOCHA...)
+### `npm start or yarn start`
 
-##### Tecnologia
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Aceitaremos soluções escritas em React white redux.
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-##### Instruções
----
+### `npm test`
 
-Crie uma (ou mais) branch(es) neste repositório e cria a solução nela. Não temos um prazo de entrega, faça no seu tempo! Se você achar que tem o suficiente para avaliarmos seu trabalho antes mesmo de finalizar, faça uma Pull Request (PR) de volta para a master e nos avise que avaliamos todas as submissões.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](#running-tests) for more information.
 
-Não tem um limite para entregar o teste, faça no seu tempo, se antes de
-finalizar achar que tem o suficiente para avaliarmos seu trabalho, envie o pullrequest que avaliaremos todas as submissões;
+Tip: `npm test --coverage` to show the coverage.
 
-#### Requisitos
----
+### `npm run build`
 
-  1. Você precisará criar apenas um cliente, que vai consumir uma API existente [Holiday  API](https://holidayapi.com/).
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-  2. Montar um componente ```<Calendario />```
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-    ![<Calendar />](http://i.imgur.com/CDQCVKH.png)
+### `npm run deploy`
 
-    Com a funcão de consumir, api e marcando os dias de Feriado.
+Deploy the project to gh-pages.
 
-  3. Certifique-se de que o component seja independente, posso importa-lo para qualquer
-aplicação que vai me garantir a funcionabilidade e renderização.
+https://nelsera.github.io/challange-front/
 
-  4. Cobertura de Test Unitario, será avalido como você estrutura o projeto e como você escreve regras de eslint e configurações do webpack
+### `npm run release -- --no-verify`
 
-  #### Critério de avaliação:
-  ---
-
-  - Seu Componente, deve ser Funcional.
-  - Utilizar préprocessadores de CSS(Stylus,SASS)
-  - Codigo em ECMAScript 6
-  - Reutilizavel
-
-
-  ##### Bonus Points:
-
-  - Estilizar
-  - Exibir outras informaçoes alem de marcar os feriados
-  - Suas respostas durante o Code Review
-  - Um histórico do git (mesmo que breve) com mensagens claras e concisas.
-  - **Deploy Docker**
+Automatic versioning and CHANGELOG generation
