@@ -27,9 +27,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-
 ### `npm run deploy`
 
 Deploy the project to gh-pages.
 
 https://nelsera.github.io/challange-front/
+
+### `npm run release -- --no-verify`
+
+Automatic versioning and CHANGELOG generation
