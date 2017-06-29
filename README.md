@@ -1,55 +1,65 @@
-### Challange Front
+# Frontend Engineer Code Challenge - Emprego Ligado
 
-##### Pré requisitos
----
+Através desse desafio, queremos conhecer suas habildades de desenvolvimento e principalmente como você resolve problemas.
 
-O seu teste deve ter um **README** com os passos necessários para:
+## Sem tempo para realizar o desafio?
 
+Você pode enviar o link de um pull request com uma contribuição sua para qualquer projeto Open Source ou algum projeto próprio que você acredita que demonstre o seu nível técnico e a qualidade do seu código.
+Lembre-se que quanto mais código seu pudermos visualizar, melhor será para te avaliarmos. :)
+
+## Sobre o desafio
+
+O desafio consiste em construir uma aplicação para que o usuário possa fazer buscas por termos no Instagram e ver resultados ao seu redor.
+
+Sua aplicação deve conter:
+- Login com Instagram
+- Permitir acesso a minha localização
+- Busca de um termo especfico
+- Resultado da busca mostrando os seguintes campos:
+  - Foto
+  - Usuário que postou
+  - Data do post
+  - Quantidade de likes
+  
+A aplicação deve ser SPA.
+
+Você pode ajustar a interface como achar melhor, de modo que a navegação seja agradável e fluida.
+
+Bônus (não eliminatório):
+- Aplicação ser responsiva
+- PWA
+
+## Pré-requisitos
+
+O seu teste deve ter um README com os passos necessários para:
 - Rodar o projeto;
-- Instalar as dependências (de preferência utilizando **NPM** ou **Yarn** );
-- Rodar os testes automatizados;(AVA, MOCHA...)
+- Instalar as dependências;
+- Rodar os testes automatizados.
 
-##### Tecnologia
+### Tecnologia
 
-Aceitaremos soluções escritas em React white redux.
+Preferimos soluções escritas em AngularJS, React ou Ember.js.
+Se caso você quiser usar algo que não está descrito aqui, fique à vontade, porém gostaríamos que você nos enviasse uma defesa da sua escolha.
 
-##### Instruções
----
+### Bônus hints:
 
-Crie uma (ou mais) branch(es) neste repositório e cria a solução nela. Não temos um prazo de entrega, faça no seu tempo! Se você achar que tem o suficiente para avaliarmos seu trabalho antes mesmo de finalizar, faça uma Pull Request (PR) de volta para a master e nos avise que avaliamos todas as submissões.
+- Gostamos de testes;
+- Gostamos de Docker;
+- Gostamos de CI;
+- Message queues são legais;
+- Commits estruturados são bem legais;
+- Documentação é vida.
 
-Não tem um limite para entregar o teste, faça no seu tempo, se antes de
-finalizar achar que tem o suficiente para avaliarmos seu trabalho, envie o pullrequest que avaliaremos todas as submissões;
+## O que está sendo avaliado
 
-#### Requisitos
----
+Sua capacidade de compreender um problema, desenhar uma solução e aplicá-la.
+Queremos ver como você resolve o problema proposto e suas habilidades com as tecnologias propostas.
+Avaliaremos a qualidade do seu código, reutilização de componentes e boas práticas.
 
-  1. Você precisará criar apenas um cliente, que vai consumir uma API existente [Holiday  API](https://holidayapi.com/).
+## Submissão
 
-  2. Montar um componente ```<Calendario />```
+Para nos enviar seu código, você pode:
 
-    ![<Calendar />](http://i.imgur.com/CDQCVKH.png)
-
-    Com a funcão de consumir, api e marcando os dias de Feriado.
-
-  3. Certifique-se de que o component seja independente, posso importa-lo para qualquer
-aplicação que vai me garantir a funcionabilidade e renderização.
-
-  4. Cobertura de Test Unitario, será avalido como você estrutura o projeto e como você escreve regras de eslint e configurações do webpack
-
-  #### Critério de avaliação:
-  ---
-
-  - Seu Componente, deve ser Funcional.
-  - Utilizar préprocessadores de CSS(Stylus,SASS)
-  - Codigo em ECMAScript 6
-  - Reutilizavel
-
-
-  ##### Bonus Points:
-
-  - Estilizar
-  - Exibir outras informaçoes alem de marcar os feriados
-  - Suas respostas durante o Code Review
-  - Um histórico do git (mesmo que breve) com mensagens claras e concisas.
-  - **Deploy Docker**
+- Fazer um fork desse repositório e nos mandar um pull request.
+- Nos dar acesso ao seu repositório no github, bitbucket ou gitlab. Adicione o usuário dcassiano.
+- Se precisar falar com a gente: engenheria@empregoligado.com.br.
