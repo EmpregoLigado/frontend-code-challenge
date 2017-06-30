@@ -38,7 +38,7 @@ O seu teste deve ter um README com os passos necessários para:
 
 ### Tecnologia
 
-Preferimos soluções escritas em AngularJS, React ou Ember.js.
+Preferimos soluções escritas em Angular, Vue.js ou React.
 Se caso você quiser usar algo que não está descrito aqui, fique à vontade, porém gostaríamos que você nos enviasse uma defesa da sua escolha.
 
 ### Bônus hints:
