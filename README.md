@@ -41,14 +41,14 @@ O seu teste deve ter um README com os passos necessários para:
 Preferimos soluções escritas em Angular, Vue.js ou React.
 Se caso você quiser usar algo que não está descrito aqui, fique à vontade, porém gostaríamos que você nos enviasse uma defesa da sua escolha.
 
-### Bônus hints:
+### Gostamos de:
 
-- Gostamos de testes;
-- Gostamos de Docker;
-- Gostamos de CI;
-- Message queues são legais;
-- Commits estruturados são bem legais;
-- Documentação é vida.
+- Commits estruturados;
+- Documentação;
+- Testes;
+- Docker;
+- CI;
+- Message queues.
 
 ## O que está sendo avaliado
 
