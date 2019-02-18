@@ -1,33 +1,40 @@
-# Frontend Engineer Code Challenge - Emprego Ligado
+# Front-End Developer Code Challenge - LEVEE
 
 Através desse desafio, queremos conhecer suas habildades de desenvolvimento e principalmente como você resolve problemas.
 
 ## Sem tempo para realizar o desafio?
 
-Você pode enviar o link de um pull request com uma contribuição sua para qualquer projeto Open Source ou algum projeto próprio que você acredita que demonstre o seu nível técnico e a qualidade do seu código.
+Você pode enviar algum projeto próprio que você acredita que demonstre o seu nível técnico e a qualidade do seu código.
+Esse projeto precisa ser desenvolvido em React, utilizando ferramentas de compilação, testes unitários e um layout responsivo.
 Lembre-se que quanto mais código seu pudermos visualizar, melhor será para te avaliarmos. :)
 
 ## Sobre o desafio
 
-O desafio consiste em construir uma aplicação para que o usuário possa fazer buscas por termos no Instagram e ver resultados ao seu redor.
+O desafio consiste em construir uma aplicação React para que o usuário possa ver detalhes de vagas de emprego, um arquivo postman com a API necessária será encaminhado por e-mail.
 
 Sua aplicação deve conter:
-- Login com Instagram
-- Permitir acesso a minha localização
-- Busca de um termo especfico
-- Resultado da busca mostrando os seguintes campos:
-  - Foto
-  - Usuário que postou
-  - Data do post
-  - Quantidade de likes
-  
-A aplicação deve ser SPA.
-
-Você pode ajustar a interface como achar melhor, de modo que a navegação seja agradável e fluida.
+* Servidor Node com 2 rotas:
+    * `api/jobs`: Retornando uma lista de vagas de emprego;
+    * `api/job/:id`: Retornando a vaga requisitada no parâmetro `:id`;
+* Aplicação React com 2 telas utilizando [Material-UI](https://material-ui.com/);
+    * Tela inicial com uma listagem de vagas de emprego:
+      * Lista de cards das vagas retornadas ao requisitar a rota `api/jobs`;
+      * Mapa contendo markers customizados e informações da vaga;
+    * Tela com detalhes da vaga:
+      * Exibir detalhes sobre uma vaga ao requisitar a rota `api/job/:id`;
+      * Exibir um botão que ao clicar, apresenta em um modal as datas disponíveis de entrevista;
+* Testes unitários com alguma ferramenta como [Jest](https://jestjs.io/docs/en/getting-started);
+      
+Todas as informações que serão exibidas ficam a seu critério. O layout precisa ser responsivo, de modo que a navegação seja agradável e fluida.
 
 Bônus (não eliminatório):
-- Aplicação ser responsiva
-- PWA
+- Recursos de PWAs;
+- SSR (Next.js);
+- API Node + Express;
+- Javascript ES6 com Babel;
+- CSS3 e Pré-processadores como Stylus e SASS;
+- Webpack;
+- ESLint e Prettier.
 
 ## Pré-requisitos
 
@@ -38,7 +45,7 @@ O seu teste deve ter um README com os passos necessários para:
 
 ### Tecnologia
 
-Preferimos soluções escritas em Angular, Vue.js ou React.
+Preferimos soluções escritas em React (Temos uma demanda específica neste momento).
 Se caso você quiser usar algo que não está descrito aqui, fique à vontade, porém gostaríamos que você nos enviasse uma defesa da sua escolha.
 
 ### Gostamos de:
@@ -47,8 +54,7 @@ Se caso você quiser usar algo que não está descrito aqui, fique à vontade, p
 - Documentação;
 - Testes;
 - Docker;
-- CI;
-- Message queues.
+- CI.
 
 ## O que está sendo avaliado
 
@@ -61,6 +67,5 @@ Avaliaremos a qualidade do seu código, reutilização de componentes e boas pr�
 Para nos enviar seu código, você pode:
 
 - Fazer um fork desse repositório e nos mandar um pull request.
-- Nos dar acesso ao seu repositório no github, bitbucket ou gitlab. Adicione o usuário bonigauglitz
-.
-- Se precisar falar com a gente: engenheria@empregoligado.com.br.
+- Nos dar acesso ao seu repositório no github, bitbucket ou gitlab. Adicione o usuário `bonigauglitz` ou `maiconpazin`.
+- Se precisar falar com a gente: maicon.pazin@levee.com.br.
