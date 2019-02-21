@@ -10,10 +10,10 @@ Lembre-se que quanto mais código seu pudermos visualizar, melhor será para te 
 
 ## Sobre o desafio
 
-O desafio consiste em construir uma aplicação React para que o usuário possa ver detalhes de vagas de emprego, um arquivo postman com a API necessária será encaminhado por e-mail.
+O desafio consiste em construir uma aplicação React para que o usuário possa ver detalhes de vagas de emprego. Um arquivo postman com a API necessária será encaminhado por e-mail.
 
 Sua aplicação deve conter:
-* Servidor Node com 2 rotas:
+* Servidor Node + Express com 2 rotas:
     * `api/jobs`: Retornando uma lista de vagas de emprego;
     * `api/job/:id`: Retornando a vaga requisitada no parâmetro `:id`;
 * Aplicação React com 2 telas utilizando [Material-UI](https://material-ui.com/);
@@ -28,13 +28,12 @@ Sua aplicação deve conter:
 Todas as informações que serão exibidas ficam a seu critério. O layout precisa ser responsivo, de modo que a navegação seja agradável e fluida.
 
 Bônus (não eliminatório):
-- Recursos de PWAs;
-- SSR (Next.js);
-- API Node + Express;
+- Redux;
+- SSR com Next.js;
 - Javascript ES6 com Babel;
 - CSS3 e Pré-processadores como Stylus e SASS;
-- Webpack;
-- ESLint e Prettier.
+- ESLint e Prettier;
+- Cache de assets.
 
 ## Pré-requisitos
 
@@ -42,11 +41,6 @@ O seu teste deve ter um README com os passos necessários para:
 - Rodar o projeto;
 - Instalar as dependências;
 - Rodar os testes automatizados.
-
-### Tecnologia
-
-Preferimos soluções escritas em React (Temos uma demanda específica neste momento).
-Se caso você quiser usar algo que não está descrito aqui, fique à vontade, porém gostaríamos que você nos enviasse uma defesa da sua escolha.
 
 ### Gostamos de:
 
