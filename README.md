@@ -67,4 +67,4 @@ Para nos enviar seu código, você pode:
 
 - Fazer um fork desse repositório e nos mandar um pull request.
 - Nos dar acesso ao seu repositório no github, bitbucket ou gitlab. Adicione o usuário `bonigauglitz` ou `maiconpazin`.
-- Se precisar falar com a gente: maicon.pazin@levee.com.br.
+- Se precisar falar com a gente: engenharia@levee.com.br.
