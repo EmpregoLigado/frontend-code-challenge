@@ -17,7 +17,7 @@ Sua aplicação deve conter:
 - Servidor Node + Express com 2 rotas:
   - `api/jobs`: Retornando uma lista de vagas de emprego;
   - `api/job/:id`: Retornando a vaga requisitada no parâmetro `:id`;
-  - As rotas devem consultar a seguinte API: [lista de jobs](https://apigw.qa.empregoligado.net/britney/api/v1/jobs?limit=10);
+  - As rotas devem consultar a seguinte API: [lista de jobs](https://apigw.prod.empregoligado.net/britney/api/v1/jobs?limit=10);
 - Aplicação React com 2 telas utilizando [Material-UI](https://material-ui.com/);
   - Tela inicial com uma listagem de vagas de emprego:
     - Lista de cards das vagas retornadas ao requisitar a rota `api/jobs`;
